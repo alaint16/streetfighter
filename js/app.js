@@ -69,3 +69,5 @@ function playHadouken() {
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 }
+
+
