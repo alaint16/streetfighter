@@ -17,18 +17,27 @@ $(document).ready(function() {
      {'left': '1020px'}, 500,
      function(){
      	$(this).hide();
-     	$(this).css('left','-20px');
-     }
-      );
+     	$(this).css('left','20px');
+      console.log('this is working');
+     })
+
   })
   .mousedown(function(){
   	playHadouken();
   	$('.ryu-throwing').show();
+    $('.ryu-cool').hide();
+    $('.ryu-ready').hide();
+    $('.ryu-still').hide();
+     $('.hadouken').show();
 
-$('.ryu-cool').hide();
-$('.ryu-ready').hide();
-$('.ryu-still').hide();
-
+$('.hadouken').finish().show()
+  .animate(
+    {'left': '1020px'},
+    500,
+    function() {
+      $(this).hide();
+      $(this).css('left', '20px');
+    });
 
 
   })
