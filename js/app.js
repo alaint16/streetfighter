@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
 
-  $('.ryu').click(function(){
+  $('.ryu').click(function(){ alert ('helloooo');
      $('.hadouken').show().animate(
      {'left': '1020px'}, 500,
      function(){
